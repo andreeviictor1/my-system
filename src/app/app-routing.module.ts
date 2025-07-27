@@ -1,7 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { MainComponent } from './components/main/main.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { UsuariosComponent } from './components/usuarios/usuarios.component';
+import { ConfiguracoesComponent } from './components/configuracoes/configuracoes.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path: '', component: MainComponent, pathMatch: 'full'},
+  {path: 'dashboard', component: DashboardComponent},
+  {path: 'usuarios', component: UsuariosComponent, pathMatch: 'full'},
+  {path: 'configuracoes', component: ConfiguracoesComponent, pathMatch: 'full'},
+
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

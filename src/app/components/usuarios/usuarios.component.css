@@ -1,0 +1,34 @@
+.main-content {
+  margin-left: 220px;
+  margin-top: 40px;  
+  padding: 2rem;
+  min-height: calc(100vh - 60px);
+}
+
+
+.p-table td:last-child,
+.p-table th:last-child{
+  width: 120px;
+  min-width: 90px;
+  max-width: 140px;
+  text-align: center;
+  padding: 0.5rem 0.25rem;
+}
+
+
+
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+.action-btn .p-button {
+  height: 2rem;
+  width: 2rem;
+  min-width: 2rem;
+  font-size: 1rem;
+  padding: 0;
+}
